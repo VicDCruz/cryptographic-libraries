@@ -33,6 +33,8 @@ function App() {
       default:
         break;
     }
+    if (messageAlice !== '') setReceive('bob', messageAlice);
+    if (messageBob !== '') setReceive('alice', messageBob);
   };
 
   const setReceive = (pox, message) => {
